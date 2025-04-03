@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Recipes</title>
+</head>
+
+<body>
+
+
+
+  <nav class="side-nav-menu h-100 d-flex">
+    <div class="nav-tab d-flex flex-column h-100 justify-content-between p-4">
+      <div class="links">
+        <ul class="list-unstyled overflow-hidden">
+          <li class="py-2 position-relative" id="search">Search</li>
+          <li class="py-2 position-relative" id="ingredients">Ingredients</li>
+          <li class="py-2 position-relative" id="categories">Categories</li>
+          <li class="py-2 position-relative" id="area">Area</li>
+          <li class="py-2 position-relative" id="contact">Contact</li>
+        </ul>
+      </div>
+      <div class="nav-footer text-secondary lead">
+        <div class="icons pb-3">
+          <i class="fab fa-facebook pe-2"></i>
+          <i class="fab fa-twitter pe-2"></i>
+          <i class="fas fa-globe pe-2"></i>
+        </div>
+        <div class="footer">
+          <p class="w-75">This site is for food recipes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-header d-flex flex-column justify-content-between py-4 align-items-center text-black">
+      <img class="logo" src="imgs/logo.png" alt="logo" />
+      <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+      <div>
+        <i class="fas fa-globe d-block"></i>
+        <i class="fas fa-share-nodes"></i>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="start">Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" id="searchSm">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" id="ingredientsSm">Ingredients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" id="categoriesSm">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" id="areaSm">Area</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" id="contactSm">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="upButton" id="upButton">
+    <i class="fas fa-caret-up"></i>
+  </div>
+
+  <div
+    class="position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center bg-dark d-none z-3"
+    id="internalLoading">
+
+    <i class="fas fa-spinner fa-spin fa-5x"></i>
+
+  </div>
+
+  <div class="container w-75" id="searchDisplay">
+  </div>
+
+  <div class="container">
+    <div class="row py-4 gy-4" id="rowDisplay">
+
+    </div>
+    <div class="loading position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center bg-dark"
+      id="loading">
+
+      <i class="fas fa-spinner fa-spin fa-5x"></i>
+
+    </div>
+  </div>
+
+  <div class="contact" id="contactDisplay">
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

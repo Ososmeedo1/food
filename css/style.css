@@ -1,0 +1,156 @@
+/* Global */
+
+
+body {
+  background-color: #2b2b2b;
+  color: #f9f6f6;
+}
+
+i {
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Side Nav */
+
+.side-nav-menu {
+  background-color: #0d0d0d;
+  position: fixed;
+  top: 0;
+  left: -268.8px;
+  z-index: 99999999;
+}
+
+.links ul li {
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.links ul li:hover {
+  color: #FFC107;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-header {
+  background-color: #fff;
+}
+
+/* Meals */
+
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 100%;
+  transition: all 0.5s;
+}
+
+.meal:hover .meal-layer {
+  top: 0;
+}
+
+
+/* Search */
+
+
+input {
+  width: 100%;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #555;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+  color: #888;
+  opacity: 0.8;
+}
+
+input:focus {
+  border-color: #fff;
+  /* Green Highlight */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+
+/* Area */
+
+.country {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+.country:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+
+/* Loading */
+
+.loading {
+  z-index: 9999;
+  display: flex;
+}
+
+/* Up Button */
+
+#upButton {
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #FFC107;
+  z-index: 99999999;
+}
+
+#upButton.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+  .side-nav-menu {
+    display: none !important;
+  }
+
+  .upButton {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    display: none !important;
+  }
+}
