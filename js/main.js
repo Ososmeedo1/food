@@ -336,8 +336,6 @@ function displayMealDetails(data) {
             ${ingredients}
           </ul>
 
-          <a href="${data.strSource}" class="btn btn-success btn-sm w-25 me-2" target="_blank">Source</a>
-          <a href="${data.strYoutube}" class="btn btn-danger btn-sm w-25" target="_blank">Video</a>
         </div>
     `
 
@@ -614,6 +612,7 @@ function confirmPasswordValidation() {
 
   return result;
 }
+
 
 
 
